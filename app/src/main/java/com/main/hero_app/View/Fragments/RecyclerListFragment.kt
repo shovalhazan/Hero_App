@@ -22,10 +22,6 @@ import com.main.hero_app.View.Adapters.HeroRowCustomAdapter
 import com.main.hero_app.ViewModel.RecyclerFragmentViewModel
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [RecyclerListFragment.newInstance] factory method to create an instance of this fragment.
- */
 class RecyclerListFragment : Fragment() {
 
     //views
@@ -95,28 +91,7 @@ class RecyclerListFragment : Fragment() {
         })
         viewModel.getHeroesByName(name)
     }
-//    private fun refreshHeroes(name:String) {
-//        viewModel.getHeroesByName(name)
-//        viewModel.heroStatus.observe(viewLifecycleOwner, Observer { apiStatus ->
-//            when (apiStatus) {
-//                RecyclerFragmentViewModel.HeroApiStatus.DONE -> {
-//                    heroAdapterHeroRow.dataSet = viewModel._heroList.value?.results!!
-//                    heroAdapterHeroRow.notifyDataSetChanged()
-//                }
-//                RecyclerFragmentViewModel.HeroApiStatus.NO_INTERNET_CONNECTION -> {
-//
-//                }
-//                RecyclerFragmentViewModel.HeroApiStatus.LOADING -> {
-//                    progressBar.visibility= View.VISIBLE
-//                    LBL_msg.visibility = View.INVISIBLE
-//                    LST_searchListResult.visibility = View.INVISIBLE
-//                }
-//                else->{
-//                    mBinding.swipeRefreshHeroes.isRefreshing = false
-//                }
-//            }
-//        })
-//    }
+
     private fun checkIfNameExist(it: HeroesList) {
         Log.d("HeroFRG", "checkIfNameExist: ")
       if(it.error=="bad name search request") {
