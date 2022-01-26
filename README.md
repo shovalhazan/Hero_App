@@ -8,7 +8,7 @@ The app is written in Kotlin and uses the Gradle build system.<br/>
 Min API level == 26<br/>
 
 ## Architecture<br/>
-i will add the diagram later <br/>
+![image](https://user-images.githubusercontent.com/49520039/151263319-dfd9aeb2-7501-4fe8-853d-11ccb7419969.png) <br/>
 
 ## Libraries<br/>
 [Retrofit](https://square.github.io/retrofit/)<br/> Type-safe HTTP client for Android and Java and Kotlin<br/> 
